@@ -1,0 +1,229 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #d7d7d7;
+  background-image: url("./img/background.svg");
+  background-size: cover;
+  background-position: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  border: 2px solid blue;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  overflow: auto;
+  border: 2px solid blue;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background-color: #d7d7d7;
+  bottom: 0;
+  width: 100vw;
+  height: 60px; /* Height of the footer section */
+  border: 1px solid red;
+}
+/* Reusable properties for contact button */
+
+#contactbtn {
+  background-color: #ffffff;
+  color: #000000 !important;
+  border-radius: 20px;
+  padding-right: 1em !important;
+  padding-left: 1em !important;
+}
+
+/* Links on the navigation bar */
+
+#navbar {
+  justify-content: right;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: white;
+  margin-right: 3em;
+  padding: 0.5em;
+  display: flex;
+  justify-content: right;
+  text-align: center;
+  font-weight: bold;
+  filter: contrast(200%);
+}
+
+/* Properties for navigation bar */
+
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: right;
+  margin-top: 5em;
+}
+
+/* Sets the main content as flex so the direct child can be manipulated */
+
+#maincontent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Creates one box with 50% width */
+
+#name {
+  height: 80vh;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+}
+
+#namedata {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1.5);
+}
+
+.social {
+  margin-top: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialicon {
+  margin-left: 0.3em;
+  width: 60%;
+  padding: 0.5em;
+  background-color: #c4c4c4;
+  filter: drop-shadow(0.5rem 0.5rem 1rem);
+}
+
+@keyframes animate {
+  from {
+    rotate: 0deg;
+    transform: scale(1);
+  }
+  to {
+    rotate: 360deg;
+    transform: scale(1.5);
+  }
+}
+
+#name #eyelink {
+  display: flex;
+  justify-content: center;
+}
+
+#name #eyelink #eye {
+  width: 60%;
+  border-radius: 50%;
+  transition: 2s;
+}
+
+#eye:hover {
+  transform: scale(1.05);
+}
+
+#name h1 {
+  margin: 0.5em;
+}
+
+/* Creates another box with 50% width */
+
+#mainimg {
+  height: 80vh;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  border: 1px solid green;
+}
+
+/* Image on the homepage */
+
+#imgid {
+  position: relative;
+  object-fit: cover;
+  width: 70%;
+  height: 80%;
+  margin-top: 1em;
+  padding-top: 3em;
+  border-radius: 20%;
+  opacity: 0.5;
+  color: white;
+}
+
+@media (max-width: 811px) {
+  #namedata {
+    transform: scale(1);
+    border: 1px solid red;
+    width: 100%;
+  }
+
+  #namedata p {
+    color: #414141 !important;
+  }
+
+  #imgid,
+  #mainimg,
+  footer,
+  #navbar ul li:nth-child(4) {
+    display: none;
+  }
+
+  body {
+    background-image: linear-gradient(#919191, #d7d7d7);
+    height: 100vh;
+  }
+
+  #name #eyelink #eye {
+    width: 90%;
+  }
+
+  #name {
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  #navbar {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  #navbar ul {
+    width: 100%;
+    justify-content: center;
+  }
+
+  #navbar ul a {
+    margin-right: 0.2em;
+    background-color: #ffffff;
+    color: #000000 !important;
+    border-radius: 20px;
+    padding-right: 1em !important;
+    padding-left: 1em !important;
+  }
+
+  footer {
+    display: none;
+    justify-content: center;
+  }
+}
