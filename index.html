@@ -34,7 +34,7 @@
             <a class="button-atag" href="#portfolio">Portfolio</a>
           </li>
           <li class="navlist">
-            <a class="button-atag" href="contact.html">Contact</a>
+            <a class="button-atag" href="#contact">Contact</a>
           </li>
         </ul>
       </nav>
@@ -53,13 +53,13 @@
         <h1>Swapnil Rawal</h1>
         <p style="color: #909090">Front-End Developer</p>
         <div class="social">
-          <a href="#"
+          <a href="#contact"
             ><img class="socialicon" src="./img/Email.png" alt="Email"
           /></a>
-          <a href="#"
+          <a href="https://github.com/c-o-d-e" target="_blank"
             ><img class="socialicon" src="./img/Git.png" alt="Git"
           /></a>
-          <a href="#"
+          <a href="https://www.linkedin.com/in/swapnil-rawal/" target="_blank"
             ><img class="socialicon" src="./img/linkedin.png" alt="LinkedIn"
           /></a>
         </div>
@@ -157,6 +157,7 @@
         <span class="dot" onclick="currentSlide(2)"></span> 
         <span class="dot" onclick="currentSlide(3)"></span> 
       </div>
+      <div id="contact"></div>
       <div class="randomh2">
         <h2>CONTACT FORM</h2>
           <HR></HR>
@@ -164,13 +165,13 @@
       </div>
       <section id="contact">
         
-        <form action="action_page.php">
+        <form action="action_page.php" method="post">
           <div class="row">
             <div class="col-25">
               <label for="fname">First Name</label>
             </div>
             <div class="col-75">
-              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              <input type="text" id="fname" name="firstname" placeholder="Your first name..">
             </div>
           </div>
           <div class="row">
@@ -187,9 +188,10 @@
             </div>
             <div class="col-75">
               <select id="country" name="country">
-                <option value="australia">Australia</option>
-                <option value="canada">Canada</option>
+                <option value="uk">UK</option>
                 <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+                <option value="other">Other</option>
               </select>
             </div>
           </div>
