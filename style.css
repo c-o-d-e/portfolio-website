@@ -5,21 +5,11 @@
 }
 
 body {
-  background-color: #d7d7d7;
-  background-image: url("./img/background.svg");
-  background-size: cover;
-  background-position: center;
+  background: linear-gradient(105deg, #ffffff 45%, #000000 45%);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 16px;
-  line-height: 1.5;
-  border: 2px solid blue;
-}
-
-.container {
-  margin: 0 auto;
-  max-width: 1200px;
-  overflow: auto;
-  border: 2px solid blue;
+  line-height: 1.6;
+  overflow-x: hidden;
 }
 
 footer {
@@ -31,11 +21,50 @@ footer {
   bottom: 0;
   width: 100vw;
   height: 60px; /* Height of the footer section */
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
-/* Reusable properties for contact button */
 
-#contactbtn {
+/* Links on the navigation bar */
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  /* border: 1px solid red; */
+  height: 5rem;
+  background-color: hsla(0, 0%, 77%, 0.6);
+  border-radius: 2%;
+  z-index: 10;
+}
+
+#navbar .logo {
+  /* display: inline-block; */
+  width: 10rem;
+  height: auto;
+  margin-left: 2rem;
+  /* border: 1px solid green; */
+}
+
+/* Properties for navigation bar */
+
+#navbar ul {
+  list-style-type: none;
+  display: flex;
+  /* border: 1px solid green; */
+  margin-right: 2rem;
+}
+
+#navbar a {
+  text-decoration: none;
+  margin-right: 3em;
+  padding: 0.5em;
+  font-weight: bold;
+  filter: contrast(200%);
   background-color: #ffffff;
   color: #000000 !important;
   border-radius: 20px;
@@ -43,61 +72,57 @@ footer {
   padding-left: 1em !important;
 }
 
-/* Links on the navigation bar */
-
-#navbar {
-  justify-content: right;
-}
-
-#navbar a {
-  text-decoration: none;
-  color: white;
-  margin-right: 3em;
-  padding: 0.5em;
-  display: flex;
-  justify-content: right;
-  text-align: center;
-  font-weight: bold;
-  filter: contrast(200%);
-}
-
-/* Properties for navigation bar */
-
-#navbar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: right;
-  margin-top: 5em;
-}
-
 /* Sets the main content as flex so the direct child can be manipulated */
 
 #maincontent {
+  /* border: 1px solid red; */
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  position: relative;
+  top: 5rem;
+  max-width: 1200px;
+  height: 100vh;
+  margin: 0 auto;
 }
 
-/* Creates one box with 50% width */
+/* Flex items boxes properties for main's children */
 
-#name {
-  height: 80vh;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid red;
+main .mainchild {
+  /* border: 1px solid red; */
+  max-width: 25rem;
+  min-width: 25rem;
+  height: 25rem;
+  margin-top: -10rem;
 }
 
+/* Eye GIF element */
+/* First box element with mainchild class */
+
+#eye {
+  width: 60%;
+  border-radius: 50%;
+  transition: 2s;
+  cursor: pointer;
+}
+
+/* Second box element with mainchild class */
 #namedata {
   display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   transform: scale(1.5);
+}
+
+/* Third box element with mainchild class */
+
+main .mainchild #imgid {
+  width: 100%;
+  height: 100%;
+  border-radius: 20%;
+  opacity: 0.5;
+  color: white;
 }
 
 .social {
@@ -112,7 +137,161 @@ footer {
   width: 60%;
   padding: 0.5em;
   background-color: #c4c4c4;
-  filter: drop-shadow(0.5rem 0.5rem 1rem);
+  filter: drop-shadow(0.25rem 0.25rem 0.5rem);
+}
+
+#transition-div-container {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  max-width: 100%;
+  overflow-x: hidden;
+  /* border: 1px solid blue; */
+}
+
+#bg-color-white {
+  width: 50%;
+  /* border: 3px solid blue; */
+  min-height: 20rem;
+  position: absolute;
+  top: 40rem;
+  background: linear-gradient(to bottom, black, white, transparent);
+  overflow-x: hidden;
+}
+
+#bg-color-transition {
+  width: 55%;
+  min-height: 20rem;
+  /* border: 3px solid red; */
+  position: absolute;
+  top: 40rem;
+  right: 2.25rem;
+  transform: skew(-15deg);
+  background: linear-gradient(to bottom, black, white, transparent);
+  overflow-x: hidden;
+}
+
+.specialbackground {
+  background: radial-gradient(
+      circle at 13% 47%,
+      rgba(140, 140, 140, 0.03) 0%,
+      rgba(140, 140, 140, 0.03) 25%,
+      transparent 25%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 28% 63%,
+      rgba(143, 143, 143, 0.03) 0%,
+      rgba(143, 143, 143, 0.03) 16%,
+      transparent 16%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 81% 56%,
+      rgba(65, 65, 65, 0.03) 0%,
+      rgba(65, 65, 65, 0.03) 12%,
+      transparent 12%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 26% 48%,
+      rgba(60, 60, 60, 0.03) 0%,
+      rgba(60, 60, 60, 0.03) 6%,
+      transparent 6%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 97% 17%,
+      rgba(150, 150, 150, 0.03) 0%,
+      rgba(150, 150, 150, 0.03) 56%,
+      transparent 56%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 50% 100%,
+      rgba(25, 25, 25, 0.03) 0%,
+      rgba(25, 25, 25, 0.03) 36%,
+      transparent 36%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 55% 52%,
+      rgba(69, 69, 69, 0.03) 0%,
+      rgba(69, 69, 69, 0.03) 6%,
+      transparent 6%,
+      transparent 100%
+    ),
+    linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 255, 255));
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100vh;
+  overflow: auto;
+  /* border: 3px solid green; */
+  /* Make this container a flex box */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container #rightbox {
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  height: auto;
+}
+
+.container #rightbox img {
+  size: auto;
+  width: 70%;
+  margin-top: 1em;
+  border-radius: 20%;
+  opacity: 0.8;
+  box-shadow: 0px 3px 20px -2px #0828ff;
+}
+
+.container #leftbox {
+  /* border: 1px solid blue; */
+  width: 50%;
+  height: auto;
+  box-shadow: 0.5rem 0.5rem black, -0.5rem -0.5rem #ccc;
+}
+
+/* .container #leftbox #heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3em;
+} */
+
+.container #leftbox #heading h2 {
+  border: 3px solid #000000;
+  padding: 0.5em 1em;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 20px 20px 50px grey;
+}
+
+.container #leftbox #iconwrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5em;
+}
+
+.container #leftbox #iconwrap img {
+  width: 100px;
+  height: 100px;
+  margin-right: 3em;
+  margin-bottom: 1em;
+  filter: drop-shadow(0.25rem 0.25rem 0.5rem);
 }
 
 @keyframes animate {
@@ -124,17 +303,6 @@ footer {
     rotate: 360deg;
     transform: scale(1.5);
   }
-}
-
-#name #eyelink {
-  display: flex;
-  justify-content: center;
-}
-
-#name #eyelink #eye {
-  width: 60%;
-  border-radius: 50%;
-  transition: 2s;
 }
 
 #eye:hover {
@@ -152,21 +320,7 @@ footer {
   width: 50%;
   display: flex;
   justify-content: center;
-  border: 1px solid green;
-}
-
-/* Image on the homepage */
-
-#imgid {
-  position: relative;
-  object-fit: cover;
-  width: 70%;
-  height: 80%;
-  margin-top: 1em;
-  padding-top: 3em;
-  border-radius: 20%;
-  opacity: 0.5;
-  color: white;
+  /* border: 1px solid green; */
 }
 
 @media (max-width: 811px) {

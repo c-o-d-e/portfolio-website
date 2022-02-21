@@ -14,69 +14,105 @@
     <title>Portfolio</title>
   </head>
   <body>
-    <div class="container">
+    <header>
       <nav id="navbar">
+        <img
+          src="./img/SR-logos_transparent.png"
+          alt="website logo"
+          class="logo"
+        />
         <ul>
           <li class="navlist"><a href="index.html">Home</a></li>
-          <li class="navlist"><a href="skills.html">Skills</a></li>
-          <li class="navlist"><a href="portfolio.html">Portfolio</a></li>
           <li class="navlist">
-            <a id="contactbtn" href="contact.html">Contact</a>
+            <a href="#transition-div-container">Skills</a>
           </li>
+          <li class="navlist"><a href="portfolio.html">Portfolio</a></li>
+          <li class="navlist"><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+    </header>
 
-      <main id="maincontent">
-        <div id="name">
-          <a id="eyelink" href="#" onclick="hideEye()"
-            ><img id="eye" src="./img/eye2-renamed.gif" alt="GIF"
+    <main id="maincontent">
+      <img
+        id="eye"
+        src="./img/eye2-renamed.gif"
+        class="mainchild"
+        onclick="hideEye()"
+        alt="GIF"
+      />
+      <div id="namedata" class="mainchild">
+        <h3>Hi, I am</h3>
+        <h1>Swapnil Rawal</h1>
+        <p style="color: #909090">Front End Developer</p>
+        <div class="social">
+          <a href="#"
+            ><img class="socialicon" src="./img/Email.png" alt="Email"
           /></a>
-          <div id="namedata">
-            <h3>Hi, I am</h3>
-            <h1>Swapnil Rawal</h1>
-            <p style="color: #909090">Full-stack Developer</p>
-            <div class="social">
-              <a href="#"
-                ><img class="socialicon" src="./img/Email.png" alt="Email"
-              /></a>
-              <a href="#"
-                ><img class="socialicon" src="./img/Git.png" alt="Git"
-              /></a>
-              <a href="#"
-                ><img
-                  class="socialicon"
-                  src="./img/linkedin.png"
-                  alt="LinkedIn"
-              /></a>
-            </div>
+          <a href="#"
+            ><img class="socialicon" src="./img/Git.png" alt="Git"
+          /></a>
+          <a href="#"
+            ><img class="socialicon" src="./img/linkedin.png" alt="LinkedIn"
+          /></a>
+        </div>
+      </div>
+      <div class="mainchild">
+        <img
+          id="imgid"
+          src="./img/coding.jpg"
+          alt="´´´´´´´´´´´´´´´´´´´´´´¶¶¶¶¶¶¶¶¶
+            ´´´´´´´´´´´´´´´´´´´´¶¶´´´´´´´´´´¶¶
+            ´´´´´´¶¶¶¶¶´´´´´´´¶¶´´´´´´´´´´´´´´¶¶
+            ´´´´´¶´´´´´¶´´´´¶¶´´´´´¶¶´´´´¶¶´´´´´¶¶
+            ´´´´´¶´´´´´¶´´´¶¶´´´´´´¶¶´´´´¶¶´´´´´´´¶¶
+            ´´´´´¶´´´´¶´´¶¶´´´´´´´´¶¶´´´´¶¶´´´´´´´´¶¶
+            ´´´´´´¶´´´¶´´´¶´´´´´´´´´´´´´´´´´´´´´´´´´¶¶
+            ´´´´¶¶¶¶¶¶¶¶¶¶¶¶´´´´´´´´´´´´´´´´´´´´´´´´¶¶
+            ´´´¶´´´´´´´´´´´´¶´¶¶´´´´´´´´´´´´´¶¶´´´´´¶¶
+            ´´¶¶´´´´´´´´´´´´¶´´¶¶´´´´´´´´´´´´¶¶´´´´´¶¶
+            ´¶¶´´´¶¶¶¶¶¶¶¶¶¶¶´´´´¶¶´´´´´´´´¶¶´´´´´´´¶¶
+            ´¶´´´´´´´´´´´´´´´¶´´´´´¶¶¶¶¶¶¶´´´´´´´´´¶¶
+            ´¶¶´´´´´´´´´´´´´´¶´´´´´´´´´´´´´´´´´´´´¶¶
+            ´´¶´´´¶¶¶¶¶¶¶¶¶¶¶¶´´´´´´´´´´´´´´´´´´´¶¶
+            ´´¶¶´´´´´´´´´´´¶´´¶¶´´´´´´´´´´´´´´´´¶¶
+            ´´´¶¶¶¶¶¶¶¶¶¶¶¶´´´´´¶¶´´´´´´´´´´´´¶¶
+            ´´´´´´´´´´´´´´´´´´´´´´´¶¶¶¶¶¶¶¶¶¶¶
+            "
+        />
+      </div>
+    </main>
+    <div role="background color transition" id="transition-div-container">
+      <div id="bg-color-white"></div>
+      <div id="bg-color-transition"></div>
+    </div>
+    <div class="specialbackground">
+      <section class="container">
+        <div id="leftbox">
+          <div id="heading"><h2>TECHNICAL SKILLS</h2></div>
+          <div id="iconwrap">
+            <img src="./icons/html.svg" alt="HTML5" />
+            <img src="./icons/css.svg" alt="CSS3" />
+            <img
+              src="./icons/javascript-programming-language.svg"
+              alt="Javascript"
+            />
+            <img src="./icons/jquery.svg" alt="JQuery" />
+            <img src="./icons/figma.svg" alt="Figma" />
+            <img src="./icons/git.svg" alt="Git" />
+            <img src="./icons/python-programming-language.svg" alt="Python" />
+            <!-- <img src="./icons/java-programming-language.svg" alt="Java" /> -->
+            <!-- <img src="./icons/php-programming-language.svg" alt="PHP" /> -->
           </div>
         </div>
-        <div id="mainimg">
-          <img
-            id="imgid"
-            src="./img/coding.jpg"
-            alt="´´´´´´´´´´´´´´´´´´´´´´¶¶¶¶¶¶¶¶¶
-          ´´´´´´´´´´´´´´´´´´´´¶¶´´´´´´´´´´¶¶
-          ´´´´´´¶¶¶¶¶´´´´´´´¶¶´´´´´´´´´´´´´´¶¶
-          ´´´´´¶´´´´´¶´´´´¶¶´´´´´¶¶´´´´¶¶´´´´´¶¶
-          ´´´´´¶´´´´´¶´´´¶¶´´´´´´¶¶´´´´¶¶´´´´´´´¶¶
-          ´´´´´¶´´´´¶´´¶¶´´´´´´´´¶¶´´´´¶¶´´´´´´´´¶¶
-          ´´´´´´¶´´´¶´´´¶´´´´´´´´´´´´´´´´´´´´´´´´´¶¶
-          ´´´´¶¶¶¶¶¶¶¶¶¶¶¶´´´´´´´´´´´´´´´´´´´´´´´´¶¶
-          ´´´¶´´´´´´´´´´´´¶´¶¶´´´´´´´´´´´´´¶¶´´´´´¶¶
-          ´´¶¶´´´´´´´´´´´´¶´´¶¶´´´´´´´´´´´´¶¶´´´´´¶¶
-          ´¶¶´´´¶¶¶¶¶¶¶¶¶¶¶´´´´¶¶´´´´´´´´¶¶´´´´´´´¶¶
-          ´¶´´´´´´´´´´´´´´´¶´´´´´¶¶¶¶¶¶¶´´´´´´´´´¶¶
-          ´¶¶´´´´´´´´´´´´´´¶´´´´´´´´´´´´´´´´´´´´¶¶
-          ´´¶´´´¶¶¶¶¶¶¶¶¶¶¶¶´´´´´´´´´´´´´´´´´´´¶¶
-          ´´¶¶´´´´´´´´´´´¶´´¶¶´´´´´´´´´´´´´´´´¶¶
-          ´´´¶¶¶¶¶¶¶¶¶¶¶¶´´´´´¶¶´´´´´´´´´´´´¶¶
-          ´´´´´´´´´´´´´´´´´´´´´´´¶¶¶¶¶¶¶¶¶¶¶
-          "
-          />
+        <div id="rightbox">
+          <img src="./img/skills-gif.gif" alt="Coding meme" />
         </div>
-      </main>
+      </section>
+      <section id="portfolio">
+        
+      </section>
     </div>
+
     <footer>Copyright 2022 | All Rights Reserved</footer>
   </body>
 </html>
