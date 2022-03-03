@@ -31,7 +31,7 @@
             <a class="button-atag" href="#transition-div-container">Skills</a>
           </li>
           <li class="navlist">
-            <a class="button-atag" href="#portfolio">Portfolio</a>
+            <a class="button-atag" href="#slider-container">Portfolio</a>
           </li>
           <li class="navlist">
             <a class="button-atag" href="#contact">Contact</a>
@@ -95,7 +95,7 @@
       <div id="bg-color-transition"></div>
     </div>
     <div class="specialbackground">
-      <section class="container">
+    <section class="container">
         <div id="leftbox">
           <div id="heading"><h2>TECHNICAL SKILLS</h2></div>
           <div id="iconwrap">
@@ -121,52 +121,27 @@
         <div id="rightbox">
           <img src="./img/skills-gif.gif" alt="Coding meme" />
         </div>
-      </section>
-      
-      <div id="portfolio"></div>
+    </section>
 
-      <!-- Slideshow of prjojects -->
-      <section class="slideshow-container">
-        <h2>PORTFOLIO PROJECTS</h2>
-        <HR></HR>
-        <div class="mySlides fade">
-          <div class="numbertext">1 / 3</div>
-          <img src="./img/web1.png" style="width:100%">
-          <div class="text"></div>
-        </div>
-        
-        <div class="mySlides fade">
-          <div class="numbertext">2 / 3</div>
-          <img src="./img/web2.png" style="width:100%">
-          <div class="text"></div>
-        </div>
-        
-        <div class="mySlides fade">
-          <div class="numbertext">3 / 3</div>
-          <img src="./img/web3.png" style="width:100%">
-          <div class="text"></div>
-        </div>
-        
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        
-      </section>
-      <br>
-        
-      <div class="three-dots" style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span> 
-        <span class="dot" onclick="currentSlide(2)"></span> 
-        <span class="dot" onclick="currentSlide(3)"></span> 
-      </div>
-      <div id="contact"></div>
-      <div class="randomh2">
-        <h2>CONTACT FORM</h2>
-          <HR></HR>
+    <!-- Slideshow of prjojects -->
 
+    <section id="slider-container">
+      <h2>RECENT PROJECTS</h2>
+      <div id="slider-box">
+        <img id="img1" src="./img/web1.png" alt="Portfolio images slideshow" />
       </div>
-      <section id="contact">
+      <h3>Checkout <a href="https://github.com/c-o-d-e">Github</a>  for project files</h3>
+    </section>
+
+    <!-- Contact Form -->
+    <div id="contact"></div>
+    <div class="randomh2">
+      <h2 style="text-align: center;">CONTACT FORM</h2>
+      <HR></HR>
+    </div>
+    <section id="contact">
         
-        <form action="action_page.php" method="post">
+     <form action="action_page.php" method="post">
           <div class="row">
             <div class="col-25">
               <label for="fname">First Name</label>
@@ -207,8 +182,8 @@
           <div class="row">
             <input type="submit" value="Submit">
           </div>
-        </form>
-      </section>
+      </form>
+    </section>
 
     <footer>Copyright 2022 | All Rights Reserved</footer>
     <script src="script.js"></script>

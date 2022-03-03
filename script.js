@@ -7,33 +7,26 @@ function hideEye() {
   // document.getElementByTagName("footer").style.display = "flex";
 }
 
-var slideIndex = 1;
-showSlides(slideIndex);
+// Setup for image slideshow functionality
+const arrImages = [];
+let i = 0;
+const timeChange = 3000;
+arrImages[0] = "./img/web1.png";
+arrImages[1] = "./img/web2.png";
+arrImages[2] = "./img/web3.png";
+arrImages[3] = "./img/home1.png";
 
-function plusSlides(n) {
-  showSlides((slideIndex += n));
-}
+// console.log(arrImages);
+// Function for the images to swap to make slideshow
+function slideShow() {
+  document.getElementById("img1").src = arrImages[i];
 
-function currentSlide(n) {
-  showSlides((slideIndex = n));
-}
+  if (i < arrImages.length - 1) {
+    i++;
+  } else {
+    i = 0;
+  }
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
+  setTimeout(slideShow, timeChange);
 }
+slideShow();
