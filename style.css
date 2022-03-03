@@ -6,7 +6,7 @@
 
 body {
   background: linear-gradient(105deg, #ffffff 38.1%, #000000 38.1%);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Chakra Petch", sans-serif;
   font-size: 16px;
   line-height: 1.6;
   overflow-x: hidden;
@@ -661,5 +661,11 @@ input[type="submit"] {
 
   #navbar ul .button-atag {
     margin-right: 1rem;
+  }
+
+  #slider-container h2,
+  h3 {
+    border-bottom: 3px solid black;
+    margin: 3.5rem auto;
   }
 }
