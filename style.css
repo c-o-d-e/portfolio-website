@@ -651,6 +651,7 @@ input[type="submit"] {
 
   #navbar {
     justify-content: center;
+    height: 3rem;
   }
 
   #navbar ul {
@@ -664,9 +665,17 @@ input[type="submit"] {
     margin-right: 1rem;
   }
 
+  #namedata {
+    justify-content: flex-start;
+  }
+
   #slider-container h2,
   h3 {
     border-bottom: 3px solid black;
     margin: 3.5rem auto;
+  }
+
+  footer {
+    height: 3rem;
   }
 }
