@@ -4,14 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;700&display=swap" rel="stylesheet"> 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <script
       src="https://code.jquery.com/jquery-3.6.0.js"
       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
       crossorigin="anonymous"
     ></script>
-    
+
     <title>Portfolio</title>
   </head>
   <body>
@@ -26,7 +29,7 @@
             />
           </a>
         </div>
-        
+
         <ul>
           <li class="navlist">
             <a class="button-atag" href="index.html">Home</a>
@@ -38,21 +41,21 @@
             <a class="button-atag" href="#slider-container">Portfolio</a>
           </li>
           <li class="navlist">
-            <a class="button-atag" href="#contact">Contact</a>
+            <a class="button-atag" href="#contact-scroll">Contact</a>
           </li>
         </ul>
       </nav>
     </header>
 
     <main id="maincontent">
-     
-       <img
-          id="eye"
-          src="./img/eye2-renamed.gif"
-          class="mainchild"
-          onclick="hideEye()"
-          alt="GIF"
-       />
+      <img
+        id="eye"
+        src="./img/eye2-renamed.gif"
+        class="mainchild"
+        onclick="hideEye()"
+        alt="GIF"
+      />
+
       <div id="namedata" class="mainchild">
         <h3>Hi, I am</h3>
         <h1>Swapnil Rawal</h1>
@@ -72,7 +75,7 @@
       <div class="mainchild">
         <img
           id="imgid"
-          src="./img/coding.jpg"
+          src="./img/skills-gif.gif"
           alt="´´´´´´´´´´´´´´´´´´´´´´¶¶¶¶¶¶¶¶¶
             ´´´´´´´´´´´´´´´´´´´´¶¶´´´´´´´´´´¶¶
             ´´´´´´¶¶¶¶¶´´´´´´´¶¶´´´´´´´´´´´´´´¶¶
@@ -94,40 +97,40 @@
         />
       </div>
     </main>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
+    <div class="circle4"></div>
+    <div class="square"></div>
     <div role="background color transition" id="transition-div-container">
       <div id="bg-color-white"></div>
       <div id="bg-color-transition"></div>
     </div>
 
-    <div class="specialbackground">
-
     <!-- Skills section -->
     <section class="container">
-        <div id="leftbox">
-          <div id="heading"><h2>TECHNICAL SKILLS</h2></div>
-          <div id="iconwrap">
-            <img title="HTML5" src="./icons/html.svg" alt="HTML5" />
-            <img title="CSS3" src="./icons/css.svg" alt="CSS3" />
-            <img
-              title="Javascript"
-              src="./icons/javascript-programming-language.svg"
-              alt="Javascript"
-            />
-            <img title="JQuery" src="./icons/jquery.svg" alt="JQuery" />
-            <img title="Figma" src="./icons/figma.svg" alt="Figma" />
-            <img title="Git" src="./icons/git.svg" alt="Git" />
-            <img
-              title="Python"
-              src="./icons/python-programming-language.svg"
-              alt="Python"
-            />
-            <!-- <img src="./icons/java-programming-language.svg" alt="Java" /> -->
-            <!-- <img src="./icons/php-programming-language.svg" alt="PHP" /> -->
-          </div>
+      <div id="leftbox">
+        <div id="heading"><h2>TECHNICAL SKILLS</h2></div>
+        <div id="iconwrap">
+          <img title="HTML5" src="./icons/html.svg" alt="HTML5" />
+          <img title="CSS3" src="./icons/css.svg" alt="CSS3" />
+          <img
+            title="Javascript"
+            src="./icons/javascript-programming-language.svg"
+            alt="Javascript"
+          />
+          <img title="JQuery" src="./icons/jquery.svg" alt="JQuery" />
+          <img title="Figma" src="./icons/figma.svg" alt="Figma" />
+          <img title="Git" src="./icons/git.svg" alt="Git" />
+          <img
+            title="Python"
+            src="./icons/python-programming-language.svg"
+            alt="Python"
+          />
+          <!-- <img src="./icons/java-programming-language.svg" alt="Java" /> -->
+          <!-- <img src="./icons/php-programming-language.svg" alt="PHP" /> -->
         </div>
-        <div id="rightbox">
-          <img src="./img/skills-gif.gif" alt="Coding meme" />
-        </div>
+      </div>
     </section>
 
     <!-- Slideshow of prjojects -->
@@ -137,58 +140,76 @@
       <div id="slider-box">
         <img id="img1" src="./img/web1.png" alt="Portfolio images slideshow" />
       </div>
-      <h3>Checkout <a href="https://github.com/c-o-d-e" target="_blank">Github</a>  for project files</h3>
+      <h3>
+        Checkout
+        <a href="https://github.com/c-o-d-e" target="_blank">Github</a> for
+        project files
+      </h3>
     </section>
 
     <!-- Contact Form -->
-    <div id="contact"></div>
-    <div class="randomh2">
-      <h2 style="text-align: center;">CONTACT FORM</h2>
-      <HR></HR>
-    </div>
+    <div id="contact-scroll"></div>
+
     <section id="contact">
-        
-     <form action="action_page.php" method="post">
-          <div class="row">
-            <div class="col-25">
-              <label for="fname">First Name</label>
-            </div>
-            <div class="col-75">
-              <input type="text" id="fname" name="firstname" placeholder="Your first name..">
-            </div>
+      <div class="randomh2">
+        <h2 style="text-align: center">CONTACT FORM</h2>
+      </div>
+      <form action="action_page.php" method="post">
+        <div class="row">
+          <div class="col-25">
+            <label for="fname">First Name</label>
           </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="lname">Last Name</label>
-            </div>
-            <div class="col-75">
-              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-            </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your first name.."
+            />
           </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="country">Country</label>
-            </div>
-            <div class="col-75">
-              <select id="country" name="country">
-                <option value="uk">UK</option>
-                <option value="usa">USA</option>
-                <option value="canada">Canada</option>
-                <option value="other">Other</option>
-              </select>
-            </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="lname">Last Name</label>
           </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="subject">Subject</label>
-            </div>
-            <div class="col-75">
-              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-            </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Your last name.."
+            />
           </div>
-          <div class="row">
-            <input type="submit" value="Submit">
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="country">Country</label>
           </div>
+          <div class="col-75">
+            <select id="country" name="country">
+              <option value="uk">UK</option>
+              <option value="usa">USA</option>
+              <option value="canada">Canada</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="subject">Message</label>
+          </div>
+          <div class="col-75">
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Write something.."
+              style="height: 200px"
+            ></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <input type="submit" value="Submit" />
+        </div>
       </form>
     </section>
 
