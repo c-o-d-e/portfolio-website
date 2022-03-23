@@ -101,25 +101,6 @@ footer {
   border: 2px solid #5b42f3;
 }
 
-.btn-grad {
-  margin: 10px;
-  padding: 15px 45px;
-  text-align: center;
-  text-transform: uppercase;
-  transition: 0.5s;
-  background-size: 200% auto;
-  color: white;
-  box-shadow: 0 0 20px #eee;
-  border-radius: 10px;
-  display: block;
-}
-
-.btn-grad:hover {
-  background-position: right center; /* change the direction of the change here */
-  color: #fff;
-  text-decoration: none;
-}
-
 /* Sets the main content as flex so the direct child can be manipulated */
 
 #maincontent {
@@ -171,6 +152,8 @@ footer {
     rgba(196, 113, 237, 0.5),
     rgba(246, 79, 89, 0.1)
   );
+  position: fixed;
+  z-index: -20;
 }
 
 .circle2 {
@@ -184,6 +167,8 @@ footer {
     rgba(196, 113, 237, 0.5),
     rgba(246, 79, 89, 0.1)
   );
+  position: fixed;
+  z-index: -20;
 }
 
 .circle3 {
@@ -191,6 +176,8 @@ footer {
   width: 25rem;
   bottom: 20%;
   left: 2%;
+  position: fixed;
+  z-index: -20;
 }
 
 /* Flex items boxes properties for main's children */
