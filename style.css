@@ -649,15 +649,19 @@ input[type="submit"] {
 
   #navbar ul {
     margin: 0;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    margin-left: 3rem;
+  }
+
+  #navbar ul .navlist {
+    margin-right: 0;
+    display: flex;
+    justify-content: space-between;
   }
 
   #navbar ul .button-atag {
-    margin-right: 1rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
   }
 
   #namedata {
