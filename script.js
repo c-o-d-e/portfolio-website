@@ -7,6 +7,38 @@ function hideEye() {
   // document.getElementByTagName("footer").style.display = "flex";
 }
 
+//Navigation highlights onscroll and onclick
+const buttons = document.querySelectorAll(".button-atag");
+const pages = document.querySelectorAll(".scroll-menu");
+
+buttons.forEach((element) => {
+  element.addEventListener("click", () => {
+    removeActive(buttons);
+    if (element.classList.contains("active")) {
+      return;
+    } else {
+      element.classList.add("active");
+    }
+  });
+});
+
+function changeLinkState() {
+  let index = pages.length;
+  while (index-- && window.scrollY - 650 < pages[index].offsetTop) {
+    removeActive(buttons);
+    buttons[index].classList.add("active");
+  }
+}
+
+changeLinkState();
+window.addEventListener("scroll", changeLinkState);
+
+function removeActive(arr) {
+  arr.forEach((element) => {
+    element.classList.remove("active");
+  });
+}
+
 // Setup for image slideshow functionality
 const arrImages = [];
 let i = 0;
