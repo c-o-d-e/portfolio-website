@@ -232,17 +232,19 @@ main .square2 {
 
 /* Third box element with mainchild class */
 
-main .mainchild #imgid {
+#rightbox #imgid {
+  /* width: 70%;
+  height: 70%; */
   border-radius: 20%;
   opacity: 0.7;
   filter: drop-shadow(0.25rem 0.25rem 0.5rem blue);
 }
 
-.mainchild img:hover {
+#rightbox img:hover {
   transform: scale(1.2);
 }
 
-.mainchild img {
+#rightbox img {
   transition: 0.5s ease-in-out;
 }
 
@@ -271,76 +273,33 @@ main .mainchild #imgid {
   /* border: 1px solid blue; */
 }
 
-/* .specialbackground {
-  border: 3px solid red;
-  background: radial-gradient(
-      circle at 13% 47%,
-      rgba(140, 140, 140, 0.03) 0%,
-      rgba(140, 140, 140, 0.03) 25%,
-      transparent 25%,
-      transparent 100%
-    ),
-    radial-gradient(
-      circle at 28% 63%,
-      rgba(143, 143, 143, 0.03) 0%,
-      rgba(143, 143, 143, 0.03) 16%,
-      transparent 16%,
-      transparent 100%
-    ),
-    radial-gradient(
-      circle at 81% 56%,
-      rgba(65, 65, 65, 0.03) 0%,
-      rgba(65, 65, 65, 0.03) 12%,
-      transparent 12%,
-      transparent 100%
-    ),
-    radial-gradient(
-      circle at 26% 48%,
-      rgba(60, 60, 60, 0.03) 0%,
-      rgba(60, 60, 60, 0.03) 6%,
-      transparent 6%,
-      transparent 100%
-    ),
-    radial-gradient(
-      circle at 97% 17%,
-      rgba(150, 150, 150, 0.03) 0%,
-      rgba(150, 150, 150, 0.03) 56%,
-      transparent 56%,
-      transparent 100%
-    ),
-    radial-gradient(
-      circle at 50% 100%,
-      rgba(25, 25, 25, 0.03) 0%,
-      rgba(25, 25, 25, 0.03) 36%,
-      transparent 36%,
-      transparent 100%
-    ),
-    radial-gradient(
-      circle at 55% 52%,
-      rgba(69, 69, 69, 0.03) 0%,
-      rgba(69, 69, 69, 0.03) 6%,
-      transparent 6%,
-      transparent 100%
-    ),
-    linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 255, 255));
-} */
-
 .container {
   max-width: 1200px;
+  width: 100%;
+  height: 100%;
   margin: 0 auto;
-  height: 100vh;
-  overflow: auto;
-  /* border: 3px solid green; */
-  /* Make this container a flex box */
+  margin-top: 10rem;
+  margin-bottom: 10rem;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   align-items: center;
+
+  /* border: 3px solid red; */
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 2rem;
+  backdrop-filter: blur(0.75rem);
 }
 
 .container #leftbox {
-  /* border: 1px solid blue; */
-  /* width: 50%; */
-  height: auto;
+  height: 100%;
+  margin: 0.5rem;
   box-shadow: 0.5rem 0.5rem black, -0.5rem -0.5rem #ccc;
   background: linear-gradient(
     to right bottom,
@@ -349,6 +308,22 @@ main .mainchild #imgid {
   );
 }
 
+.container #rightbox {
+  margin: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxes {
+  height: 35rem;
+  width: 30rem;
+}
+
+.boxes:nth-child(2) {
+  border-radius: 2rem;
+  overflow: hidden;
+}
 .container #leftbox #heading h2 {
   border: 3px solid #000000;
   padding: 0.5em 1em;
@@ -583,7 +558,9 @@ input[type="submit"] {
     left: 20%;
   }
 
-  main .mainchild {
+  main .mainchild,
+  #rightbox,
+  #leftbox {
     /* border: 1px solid red; */
     max-width: auto;
     min-width: auto;
