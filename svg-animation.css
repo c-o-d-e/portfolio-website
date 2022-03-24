@@ -1,0 +1,173 @@
+#maincontent svg {
+  width: 100%;
+  height: auto;
+  /* border: 2px solid red; */
+}
+
+#line1 {
+  animation: 2s line1 infinite alternate;
+  animation-delay: 5s;
+}
+
+#line2 {
+  animation: 2s line1 infinite alternate;
+  animation-delay: 6s;
+}
+
+#line3 {
+  animation: 2s line1 infinite alternate;
+  animation-delay: 7s;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+.zoom-effect {
+  transform-origin: center;
+  animation: zoom-in 5s ease-in;
+}
+
+#head {
+  animation: zoom-in 5s ease-in, head-tilt 3s infinite alternate 5s;
+}
+
+#right-arm {
+  animation: zoom-in 5s ease-in, hand 1s infinite alternate 5s;
+}
+
+#pattern1 {
+  animation: pattern1 4s infinite;
+}
+
+#curtain {
+  animation: zoom-out 5s ease-in;
+  transform-origin: center;
+}
+
+#Vector_5,
+#Vector_8,
+#Vector_11,
+#Vector_14,
+#Vector_17,
+#Vector_20,
+#Vector_23,
+#Vector_26,
+#Vector_29,
+#Vector_32,
+#Vector_35 {
+  animation: keys-1 1s infinite alternate;
+  transform-origin: center;
+  animation-delay: 5s;
+}
+
+#Vector_6,
+#Vector_9,
+#Vector_12,
+#Vector_15,
+#Vector_18,
+#Vector_21,
+#Vector_24,
+#Vector_27,
+#Vector_30,
+#Vector_33,
+#Vector_36 {
+  animation: keys-1 3s infinite alternate;
+  transform-origin: center;
+  animation-delay: 5s;
+}
+
+#Vector_4,
+#Vector_7,
+#Vector_10,
+#Vector_13,
+#Vector_16,
+#Vector_19,
+#Vector_22,
+#Vector_25,
+#Vector_28,
+#Vector_31,
+#Vector_34 {
+  animation: keys-1 5s infinite alternate;
+  transform-origin: center;
+  animation-delay: 5s;
+}
+
+#laptop-code {
+  animation: laptop-code 1s ease-in-out infinite alternate;
+  transform-origin: center;
+  animation-delay: 5s;
+}
+
+@keyframes line1 {
+  0% {
+    fill: #6c63ff;
+  }
+
+  100% {
+    fill: #e6e6e6;
+  }
+}
+
+@keyframes hand {
+  0% {
+    transform: translateY(0rem);
+  }
+  100% {
+    transform: translateY(0.5rem);
+  }
+}
+
+@keyframes head-tilt {
+  0% {
+    transform: rotateZ(0deg);
+    transform-style: preserve-3d;
+  }
+
+  100% {
+    transform: rotateZ(10deg);
+    transform-style: preserve-3d;
+  }
+}
+
+@keyframes zoom-in {
+  from {
+    transform: scale(2);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes zoom-out {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes pattern1 {
+  from {
+    transform: perspective(200);
+  }
+  to {
+    transform: perspective(100);
+  }
+}
+
+@keyframes keys-1 {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.3;
+  }
+}
+
+@keyframes laptop-code {
+  from {
+    transform: skewX(0deg);
+  }
+  to {
+    transform: skewX(10deg);
+  }
+}
