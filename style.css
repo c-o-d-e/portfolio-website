@@ -606,6 +606,10 @@ input[type="submit"] {
     display: none;
   }
 
+  #maincontent .square1 {
+    order: 2;
+  }
+
   #navbar {
     justify-content: center;
     height: 3rem;
