@@ -217,7 +217,7 @@ main .square2 {
 
 /* Second box element with mainchild class */
 #namedata {
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
