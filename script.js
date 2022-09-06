@@ -44,6 +44,9 @@ arrImages[0] = "./img/web1.png";
 arrImages[1] = "./img/web2.png";
 arrImages[2] = "./img/web3.png";
 arrImages[3] = "./img/home1.png";
+arrImages[4] = "./img/web4.png";
+arrImages[5] = "./img/web5.png";
+arrImages[6] = "./img/web5.png";
 
 // console.log(arrImages);
 // Function for the images to swap to make slideshow
