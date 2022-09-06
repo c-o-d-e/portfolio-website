@@ -8,32 +8,32 @@
 const buttons = document.querySelectorAll(".button-atag");
 const pages = document.querySelectorAll(".scroll-menu");
 
-buttons.forEach((element) => {
-  element.addEventListener("click", () => {
-    removeActive(buttons);
-    if (element.classList.contains("active")) {
-      return;
-    } else {
-      element.classList.add("active");
-    }
-  });
+buttons.forEach(element => {
+    element.addEventListener("click", () => {
+        removeActive(buttons);
+        if (element.classList.contains("active")) {
+            return;
+        } else {
+            element.classList.add("active");
+        }
+    });
 });
 
 function changeLinkState() {
-  let index = pages.length;
-  while (index-- && window.scrollY - 650 < pages[index].offsetTop) {
-    removeActive(buttons);
-    buttons[index].classList.add("active");
-  }
+    let index = pages.length;
+    while (index-- && window.scrollY - 650 < pages[index].offsetTop) {
+        removeActive(buttons);
+        buttons[index].classList.add("active");
+    }
 }
 
 changeLinkState();
 window.addEventListener("scroll", changeLinkState);
 
 function removeActive(arr) {
-  arr.forEach((element) => {
-    element.classList.remove("active");
-  });
+    arr.forEach(element => {
+        element.classList.remove("active");
+    });
 }
 
 // Setup for image slideshow functionality
@@ -44,21 +44,21 @@ arrImages[0] = "./img/web1.png";
 arrImages[1] = "./img/web2.png";
 arrImages[2] = "./img/web3.png";
 arrImages[3] = "./img/home1.png";
-arrImages[4] = "./img/web4.png";
+arrImages[4] = "./img/web4.jpg";
 arrImages[5] = "./img/web5.png";
-arrImages[6] = "./img/web5.png";
+arrImages[6] = "./img/web6.png";
 
 // console.log(arrImages);
 // Function for the images to swap to make slideshow
 function slideShow() {
-  document.getElementById("img1").src = arrImages[i];
+    document.getElementById("img1").src = arrImages[i];
 
-  if (i < arrImages.length - 1) {
-    i++;
-  } else {
-    i = 0;
-  }
+    if (i < arrImages.length - 1) {
+        i++;
+    } else {
+        i = 0;
+    }
 
-  setTimeout(slideShow, timeChange);
+    setTimeout(slideShow, timeChange);
 }
 slideShow();
