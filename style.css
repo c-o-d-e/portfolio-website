@@ -643,7 +643,12 @@ input[type="submit"] {
     #maincontent {
         display: hidden;
         background: none;
+        backdrop-filter: none;
         top: 0;
+    }
+
+    .square1 {
+        backdrop-filter: blur(0.65rem);
     }
 
     main > .mainchild {
@@ -687,10 +692,24 @@ input[type="submit"] {
         display: none;
     }
 
+    .container > #leftbox {
+        background-color: none;
+        background: linear-gradient(
+            to right bottom,
+            rgba(255, 255, 255, -1),
+            rgba(255, 255, 255, -5)
+        );
+        backdrop-filter: blur(0.01rem);
+    }
+
     #slider-container h2,
     h3 {
         border-bottom: 3px solid black;
         margin: 3.5rem auto;
+    }
+
+    #slider-container {
+        height: 700px;
     }
 
     footer {
