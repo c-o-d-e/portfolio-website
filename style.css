@@ -524,6 +524,7 @@ h3 {
     border-radius: 20px;
     margin: 1rem;
     max-width: 500px;
+    width: 500px;
     margin: 1rem;
     overflow: hidden;
 }
@@ -561,6 +562,8 @@ h3 {
 .project-description {
     margin: 1rem;
 }
+
+/* Different screen sizes */
 
 /* Sliding images */
 /* On smaller screens, decrease text size */
@@ -794,5 +797,20 @@ input[type="submit"] {
 
     footer {
         height: 3rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .project-boxes img {
+        height: 210px;
+    }
+
+    .button .button-atag {
+        padding: 0.5rem;
+    }
+
+    .button .button-atag:nth-child(2) {
+        padding-right: 1rem;
+        padding-left: 1rem;
     }
 }
