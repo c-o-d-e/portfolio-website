@@ -71,7 +71,8 @@ footer {
     margin-right: 2rem;
 }
 
-#navbar .button-atag {
+#navbar .button-atag,
+.project-boxes .button-atag {
     text-decoration: none;
     font-weight: bold;
     color: #ffffff;
@@ -89,7 +90,8 @@ footer {
     transition: 0.5s;
 }
 
-#navbar .button-atag:hover {
+#navbar .button-atag:hover,
+.project-boxes .button-atag:hover {
     /* background-position: right center; change the direction of the change here  */
     background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
     text-decoration: none;
@@ -491,6 +493,62 @@ h3 {
     to {
         opacity: 1;
     }
+}
+
+/* Projects Wrapper */
+
+.projects-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* height: 600px; */
+    max-width: 1200px;
+    margin: auto;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3)
+    );
+    border-radius: 2rem;
+    backdrop-filter: blur(0.3rem);
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+/* Project box/container */
+.project-boxes {
+    text-align: center;
+    box-shadow: 0px 5px 5px 5px rgba(0, 255, 255, 0.3);
+    border-radius: 20px;
+    margin: 1rem;
+    max-width: 500px;
+    margin: 1rem;
+    overflow: hidden;
+}
+
+.project-boxes img {
+    height: 300px;
+}
+
+.button {
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button a {
+    margin: 0.5rem;
+}
+
+.project-boxes span {
+    color: blue;
+}
+
+.project-description {
+    margin: 1rem;
 }
 
 /* Sliding images */
